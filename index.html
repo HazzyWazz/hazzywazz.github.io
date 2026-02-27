@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/oat.min.css">
+	<title>HazzyWazz</title>
+	<script src="./scripts/oat.min.js" defer></script>
+</head>
+<body>
+	<div data-sidebar-layout>
+		<aside data-sidebar>
+			<nav>
+				<ul>
+					<li><a href="#home" aria-current="page">Home</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contacts">Contacts</a></li>
+					<!-- <li><a href="#sidebar">Users</a></li>
+					<li>
+						<details open>
+							<summary>Settings</summary>
+							<ul>
+								<li><a href="#sidebar">Billing</a></li>
+							</ul>
+						</details>
+					</li> -->
+				</ul>
+			</nav> <!-- end of sidebar contents -->
+		</aside> <!-- end of sidebar -->
+		<main>
+			<div style="padding: var(--space-3)">
+				<h1 style="text-align: center;" class="mt-4" id="home">HazzyWazz</h1>
+				<p>Local moth, gamer and </p>
+				<div class="container">
+					<h2 id="projects">Projects</h2>
+					<div class="row">
+						<div class="col-6 mb-4">
+							<article class="card">
+								<header>
+									<h3>Website</h3>
+								</header>
+								<p>This website was made in one afternoon and it looks like it. It uses <a href="https://oat.ink">oat.ink</a> for styling.</p>
+								<footer class="flex gap-2 mt-4">
+									<a href="https://github.com/HazzyWazz/hazzywazz.github.io" target="_blank" class="button">Open repo</a>
+								</footer>
+							</article>
+						</div>
+						<div class="col-6 mb-4">
+							<article class="card">
+								<header>
+									<h3>Utilities</h3>
+								</header>
+								<p>Utilities is a list of software and websites I use or have been recommended. If you got anything I don't (open source welcome!), please do tell.</p>
+								<footer class="flex gap-2 mt-4">
+									<a href="https://github.com/HazzyWazz/utilities" target="_blank" class="button">Open repo</a>
+								</footer>
+							</article>
+						</div>
+					</div> <!-- end of projects -->
+					
+					<h2 id="contacts">Contacts</h2>
+					<div class="row">
+						<div class="col-2"></div>
+						<div class="col-8">
+							<div role="alert" data-variant="warning" class="mb-4 align-center">
+								<strong>Attention!</strong> If you use multiple names online, try to include where I could possibly know you from when contacting.
+							</div>
+						</div>
+						<div class="col-2"></div>
+					</div> <!-- end of warning -->
+					<div class="row mb-6">
+						<div class="col-5">
+							<article class="card">
+								<header>
+									<h3>Signal</h3>
+									<span class="badge mb-4 success">Secure (E2EE)</span>
+									<span class="badge mb-4 success">Checked daily</span>
+									<p class="mb-2">Open source, encrypted VoIP and chat app.</p>
+								</header>
+								<p>This is the card content. It can contain any HTML.</p>
+								<footer class="flex gap-2 mt-4">
+									<!-- <button class="outline">Read more</button> -->
+									<a href="https://en.wikipedia.org/wiki/Signal_(software)" target="_blank" class="button outline">Read more</a>
+									<!-- <button>Contact</button> -->
+									<button commandfor="Signal-dialog" command="show-modal">Open contact</button>
+									<dialog id="Signal-dialog" closedby="any">
+										<form method="dialog">
+											<div>
+												<p>Signal username: <code>hazzywazz.69</code></p>
+											</div>
+										</form>
+									</dialog>
+								</footer>
+							</article>
+						</div>
+						<div class="col-2"></div>
+						<div class="col-5">
+							<article class="card">
+								<header>
+									<h3>Fluxer</h3>
+									<span class="badge mb-4 danger">Basic</span>
+									<span class="badge mb-4 warning">Once per whenever</span>
+									<p class="mb-2">Fluxer is an open source alternative to Discord.</p>
+								</header>
+								<p>This is the card content. It can contain any HTML.</p>
+								<footer class="flex gap-2 mt-4">
+									<!-- <button class="outline">Read more</button> -->
+									<a href="https://github.com/fluxerapp/fluxer" target="_blank" class="button outline">Read more</a>
+									<!-- <button>Contact</button> -->
+									<button commandfor="Fluxer-dialog" command="show-modal">Open dialog</button>
+									<dialog id="Fluxer-dialog" closedby="any">
+										<form method="dialog">
+											<div>
+												<p>Fluxer username: <code>haziallat#1996</code></p>
+											</div>
+										</form>
+									</dialog>
+								</footer>
+							</article>
+						</div>
+					</div> <!-- end of first two -->
+					<div class="row">
+						<div class="col-5">
+							<article class="card">
+								<header>
+									<h3>Telegram</h3>
+									<span class="badge mb-4 warning">E2EE Optional!</span>
+									<span class="badge mb-4 success">Checked daily</span>
+									<p class="mb-2">Telegram is a cloud-based instant messaging platform with a focus on privacy</p>
+								</header>
+								<p>This is the card content. It can contain any HTML.</p>
+								<footer class="flex gap-2 mt-4">
+									<a href="https://en.wikipedia.org/wiki/Telegram_(software)" target="_blank" class="button outline">Read more</a>
+									<!-- <button>Contact</button> -->
+									<a href="https://t.me/HazzyXn" target="_blank" class="button">Open</a>
+								</footer>
+							</article>
+						</div>
+						<div class="col-2"></div>
+						<div class="col-5">
+							<article class="card">
+								<header>
+									<h3>BlueSky</h3>
+									<span class="badge mb-4 danger">Basic</span>
+									<span class="badge mb-4 success">Checked daily</span>
+									<p class="mb-2">BlueSky is a microblogging platform, like twitter but when it was only "bad" and not "dear god"</p>
+								</header>
+								<p>This is the card content. It can contain any HTML.</p>
+								<footer class="flex gap-2 mt-4">
+									<a href="https://en.wikipedia.org/wiki/Telegram_(software)" target="_blank" class="button outline">Read more</a>
+									<!-- <button>Contact</button> -->
+									<a href="https://bsky.app/profile/hazzyxn.bsky.social" target="_blank" class="button">Open</a>
+								</footer>
+							</article>
+						</div>
+					</div> <!-- end of last two -->
+					<div class="row mt-6 mb-4">
+						<div class="col-12">
+							<footer class="footer text-light">
+								This website supports moths and their agenda.
+							</footer>
+						</div>
+					</div> <!-- end of footer -->
+				</div> <!-- end of container -->
+			</div> <!-- end of inner window -->
+		</main> <!-- end of main window -->
+	</div> <!-- end of sidebar container -->
+</body>
+</html>
